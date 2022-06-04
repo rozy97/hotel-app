@@ -1,16 +1,16 @@
-const whitelist = [
-    "http://localhost:3000",
-    "http://localhost:8080",
-    "http://localhost",
-];
+// const whitelist = [
+//     "http://localhost:3000",
+//     "http://localhost:8080",
+//     "http://localhost",
+// ];
 
 const setHeaders = function (req, res, next) {
-    const origin = req.headers.origin;
+    // const origin = req.headers.origin;
 
-    //check if the request origin is in our whitelist
-    if (whitelist.indexOf(origin) > -1) {
-        res.setHeader("Access-Control-Allow-Origin", origin);
-    }
+    // //check if the request origin is in our whitelist
+    // if (whitelist.indexOf(origin) > -1) {
+    //     res.setHeader("Access-Control-Allow-Origin", origin);
+    // }
 
     res.setHeader("Access-Control-Allow-Origin", "*");
 
