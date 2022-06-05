@@ -8,7 +8,7 @@ const postsRouter = require("./routers/posts.router");
 const usersRouter = require("./routers/users.router");
 
 // set headers to avoid CORS Policy
-// app.use(setHeaders);
+app.use(setHeaders);
 // parser the body of the request
 app.use(bodyParser);
 app.use(logger("combined"));
